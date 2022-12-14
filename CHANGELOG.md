@@ -10,9 +10,11 @@ and this project adheres to [Semantic Versioning][semver].
 ### Changed
 ### Fixed
 
- - Fix progress example in json extension. ([#230]) 
+ - Fix: progress example in json extension. ([#230]) 
+ - Fix: UTF16 to UTF18 character position casting ([#304])
 
 [#230]: https://github.com/openlawlibrary/pygls/issues/230
+[#304]: https://github.com/openlawlibrary/pygls/issues/304
 
 ## [1.0.0] - 2/12/2022
 ### Changed
