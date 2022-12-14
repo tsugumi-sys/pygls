@@ -11,8 +11,10 @@ and this project adheres to [Semantic Versioning][semver].
 ### Fixed
 
  - Fix progress example in json extension. ([#230]) 
+ - Provide `version` param for publishing diagnostics ([#303]) 
 
 [#230]: https://github.com/openlawlibrary/pygls/issues/230
+[#303]: https://github.com/openlawlibrary/pygls/issues/303
 
 ## [1.0.0] - 2/12/2022
 ### Changed

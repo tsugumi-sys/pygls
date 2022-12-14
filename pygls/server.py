@@ -407,9 +407,17 @@ class LanguageServer(Server):
         """Gets the object to manage client's progress bar."""
         return self.lsp.progress
 
-    def publish_diagnostics(self, doc_uri: str, diagnostics: List[Diagnostic]):
-        """Sends diagnostic notification to the client."""
-        self.lsp.publish_diagnostics(doc_uri, diagnostics)
+    def publish_diagnostics(
+        self,
+        uri: str,
+        diagnostics: Optional[List[Diagnostic]] = None,
+        version: Optional[int] = None,
+        **kwargs
+    ):
+        """
+        Sends diagnostic notification to the client.
+        """
+        self.lsp.publish_diagnostics(uri, diagnostics, version, **kwargs)
 
     def register_capability(self, params: RegistrationParams,
                             callback: Optional[Callable[[], None]] = None) -> Future:
